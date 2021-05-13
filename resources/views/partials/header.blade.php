@@ -1,3 +1,4 @@
 <header>
-    <h1>HEADER</h1>
+    @include('partials.nav')
+    @include('partials.jumbotron')
 </header>

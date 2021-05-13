@@ -1,0 +1,233 @@
+.cl-face {
+  color: #3b5998;
+}
+
+.cl-insta {
+  color: #3f729b;
+}
+
+.cl-twitter {
+  color: #00acee;
+}
+
+.cl-youTb {
+  color: #c4302b;
+}
+
+.cl-pintst {
+  color: #c8232c;
+}
+
+.cl-painter {
+  color: #ff8d00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.purple {
+  background-color: #3c1567;
+}
+
+.blue {
+  background-color: #0072bc;
+}
+
+.grey {
+  background-color: #3c3c3c;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-r3 {
+  margin-bottom: 3rem;
+}
+
+.btn-black {
+  background-color: #000000;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cont-nav .navTop, .cont-nav nav {
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.cont-nav .navTop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 25px;
+  background-color: #0282f9;
+}
+.cont-nav .navTop div:first-child, .cont-nav .navTop .navTop-link {
+  display: flex;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 12px;
+}
+.cont-nav .navTop div:first-child span, .cont-nav .navTop .navTop-link span {
+  font-size: 10px;
+  line-height: 12px;
+}
+.cont-nav .navTop div.navTop-item {
+  padding-left: 70px;
+}
+.cont-nav .navTop div.navTop-item .navTop-link {
+  align-items: center;
+}
+.cont-nav nav {
+  min-height: 100PX;
+  background-color: #ffffff;
+  padding-bottom: 5px;
+}
+.cont-nav nav .navbar-brand {
+  height: 70px;
+  width: 70px;
+}
+.cont-nav nav .navbar-brand img.logoNav {
+  width: 100%;
+}
+.cont-nav nav div.navbar-collapse {
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.cont-nav nav div.navbar-collapse .navbar-nav {
+  display: contents;
+  padding-left: 50px;
+}
+.cont-nav nav div.navbar-collapse .navbar-nav li.nav-item .nav-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #353841;
+}
+.cont-nav nav div.navbar-collapse .navbar-nav li.nav-item .nav-link.nav-link:hover {
+  color: #0282f9;
+  box-shadow: 0px 8px 0px -2px #0282f9;
+}
+.cont-nav nav div.navbar-collapse .navbar-nav li.nav-item:last-child {
+  padding-right: 50px;
+}
+.cont-nav nav div.navbar-collapse form {
+  height: 35px;
+  border-bottom: 3px solid #0282f9;
+}
+.cont-nav nav div.navbar-collapse form button, .cont-nav nav div.navbar-collapse form input.form-control {
+  background-color: #ffffff;
+  border: none;
+  padding-bottom: 0;
+  padding-right: 0;
+  background-color: inherit;
+}
+.cont-nav nav div.navbar-collapse form button:focus, .cont-nav nav div.navbar-collapse form input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.cont-nav nav div.navbar-collapse form input.form-control {
+  width: 120px;
+  padding-right: 2px;
+  text-align: right;
+  margin-right: 0;
+}
+.cont-nav nav div.navbar-collapse form input.form-control::-moz-placeholder {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.cont-nav nav div.navbar-collapse form input.form-control:-ms-input-placeholder {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.cont-nav nav div.navbar-collapse form input.form-control::placeholder {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.cont-nav nav div.navbar-collapse form button {
+  padding-left: 2px;
+}
+.cont-nav nav div.navbar-collapse form button i.fa-search {
+  font-size: 1em;
+}
+.cont-nav nav div.navbar-collapse form button:hover {
+  transform: scale(1.1);
+}
+
+.cont-jumbo {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+main .container-main {
+  padding-left: 17%;
+  padding-right: 17%;
+}
+main .container-main .currSeries {
+  position: relative;
+  top: -20px;
+  left: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0282f9;
+}
+main .container-main #consoleCard {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+main .container-main #consoleCard li.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  background-color: inherit;
+  border: none;
+}
+main .container-main #consoleCard li.card img.card-img {
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .container-main #consoleCard li.card .card-body {
+  width: 180px;
+  padding-left: 0;
+  color: #ffffff;
+}
+main .container-main #consoleCard li.card .card-body p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.cont-jumbo {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
+* {
+  outline: none;
+}

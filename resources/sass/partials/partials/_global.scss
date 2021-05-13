@@ -1,0 +1,16 @@
+*{
+    outline: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $lightGreyMain;
+}
+
+header,main,footer{
+    width : $w-100;
+}
+
+.row{
+    margin: 0;
+}

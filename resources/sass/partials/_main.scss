@@ -1,0 +1,57 @@
+main{
+    background-color: #1c1c1c;
+
+    .container-main{
+        @include px($pxContentPage);
+
+        .currSeries{
+            position: relative;
+            top:-20px;
+            left: 0;
+            width: max-content;
+            @include py(5px);
+            @include px(10px);
+            font-size: 1.8em;
+            font-weight: bold;
+            color: $white;
+            background-color: $blueComics;
+        }
+
+        #consoleCard{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            li.card{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-left: 25px;
+                background-color: inherit;
+                border: none;
+
+                img.card-img{
+                    width: 180px;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                .card-body{
+                    width: 180px;
+                    padding-left: 0;
+                    color: $white;
+                    p{
+                        margin: 0;
+                        word-wrap: break-word;
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}

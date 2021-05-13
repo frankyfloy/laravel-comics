@@ -1,0 +1,116 @@
+footer{
+    overflow-x: hidden;
+    @include txt-Capitalize;
+    section.link{
+
+        background-color: $lightGreyFoot;
+        div.container.lists{
+            display: flex;
+            justify-content: space-between;
+
+            ul.list-group{
+                height: 250px;
+                margin-top: 50px;
+
+                li.list-group-item:first-child{
+                    font-size: 16px;
+                }
+
+                li.list-group-item{
+                    @include py(5px);
+                    font-size: 12px;
+                    border: none;
+                    background-color: inherit;
+                    a{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .row{
+            div.container.icon{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 20px;
+
+                ul.list-group{
+                    flex-direction: row;
+                    padding-right: 10px;
+                    li{
+                        background-color: inherit;
+                        border: none;
+                        padding: 0;
+                        .fab, .fas, .far{
+                            padding: 5px;
+                            font-size: 35px;
+                            &:hover{
+                                text-decoration: none;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.termsAndConditions{
+        height: 100px;
+        background-color: $grey;
+        display: flex;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+            .logo-partner{
+                padding-right: 50px;
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 50px;
+                    padding-right: 20px;
+                }
+            }
+
+            div.Copyright{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 12px;
+                a{
+                    padding-right: 15px;
+                    color: #999;
+                }
+                nobr{
+                    color: $white;
+                }
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        section.link div.container.lists {
+            flex-direction: column;
+            ul.list-group {
+                margin-top: 0px;
+            }
+        }
+
+        section.termsAndConditions{
+            .container{
+                flex-direction: column;
+                .logo-partner{
+                    img{
+                        padding-bottom: 15px;
+                    }
+                }
+                //
+                div.Copyright{
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
