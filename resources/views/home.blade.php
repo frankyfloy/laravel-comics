@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('main')
-    <main>
+@section('comics')
+    <main id="home">
         <div class="container-main">
 
             <section id="cardSection">
@@ -10,13 +10,14 @@
                 </div>
 
                 <ol id="consoleCard">
-                    @foreach ($articles as  $article)
+                    @foreach ($articles as $i => $article)
                         <li class="card">
-                            <img class="card-img" src="{{$article['thumb']}}" alt="">
-                            <div class="card-body">
-                                <p>{{$article['series']}}</p>
-                            </div>
-
+                            <a href="{{route('details',['id' => $i])}}">
+                                <img class="card-img" src="{{$article['thumb']}}" alt="">
+                                <div class="card-body">
+                                    <p>{{$article['series']}}</p>
+                                </div>
+                            </a>
                         </li>
                     @endforeach
                 </ol>

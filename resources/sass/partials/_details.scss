@@ -1,0 +1,74 @@
+main#details{
+    position: relative;
+    .divider{
+        height: 70px;
+        background-color:  $blueComics;
+    }
+
+    .thumbArticle{
+        position: absolute;
+        top:-240px;
+        left: $pxContentPage;
+        width: max-content;
+    }
+
+    section#consoleDetails{
+        width: 80%;
+        @include px(25%);
+        background-color: #f6f6f6;
+
+        .cont-price{
+            background-color: green;
+            display: flex;
+            // justify-content: space-between;
+            color: $white;
+            height: 40px;
+
+            .info-price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include px(15px);
+            }
+
+
+            .check-Availability{
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                border-left: 1px solid black;
+                @include px(15px);
+                a.dropdown-toggle{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    section#infoDC{
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @include px(25%);
+        background-color: $blueComics;
+
+        div{
+            img{
+                height: 50px;
+                width: 50px;
+                object-fit: contain;
+            }
+            span{
+                padding-left: 20px;
+                color: $white;
+            }
+        }
+    }
+
+
+
+
+}

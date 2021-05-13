@@ -14,6 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $dataArticles = config('comics');
-    return view('home')->with('articles', $dataArticles);
+    // $dataArticles = config('comics');
+    // $pageActive = 'comics';
+    return view('home')->with('articles', config('comics'));
 })->name('home');
+
+Route::get('/details/{id}', function ($id) {
+    $dataArticles = config('comics');
+    // $pageActive = 'comics';
+    return view('details')->with('article', $dataArticles[$id]);
+})->name('details');
+
+
+// ->with('namePage','comics')
+//
+// ->with('namePage','details')

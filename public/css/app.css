@@ -168,15 +168,15 @@
   background-size: cover;
 }
 
-main {
+main#home {
   background-color: #1c1c1c;
 }
-main .container-main {
+main#home .container-main {
   padding-left: 17%;
   padding-right: 17%;
   padding-bottom: 25px;
 }
-main .container-main section#cardSection .currSeries {
+main#home .container-main section#cardSection .currSeries {
   position: relative;
   top: -20px;
   left: 0;
@@ -192,12 +192,12 @@ main .container-main section#cardSection .currSeries {
   color: #ffffff;
   background-color: #0282f9;
 }
-main .container-main section#cardSection #consoleCard {
+main#home .container-main section#cardSection #consoleCard {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
 }
-main .container-main section#cardSection #consoleCard li.card {
+main#home .container-main section#cardSection #consoleCard li.card {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -205,7 +205,7 @@ main .container-main section#cardSection #consoleCard li.card {
   background-color: inherit;
   border: none;
 }
-main .container-main section#cardSection #consoleCard li.card img.card-img {
+main#home .container-main section#cardSection #consoleCard li.card img.card-img {
   width: 180px;
   height: 180px;
   -o-object-fit: cover;
@@ -213,16 +213,16 @@ main .container-main section#cardSection #consoleCard li.card img.card-img {
   -o-object-position: top;
      object-position: top;
 }
-main .container-main section#cardSection #consoleCard li.card .card-body {
+main#home .container-main section#cardSection #consoleCard li.card .card-body {
   width: 180px;
   padding-left: 0;
   color: #ffffff;
 }
-main .container-main section#cardSection #consoleCard li.card .card-body p {
+main#home .container-main section#cardSection #consoleCard li.card .card-body p {
   margin: 0;
   word-wrap: break-word;
 }
-main .container-main section#cardSection a.load-more {
+main#home .container-main section#cardSection a.load-more {
   width: 180px;
   display: block;
   padding-top: 8px;
@@ -235,7 +235,7 @@ main .container-main section#cardSection a.load-more {
   font-size: 0.8em;
   font-weight: bold;
 }
-main section#infoDC {
+main#home section#infoDC {
   height: 150px;
   display: flex;
   flex-wrap: wrap;
@@ -245,13 +245,80 @@ main section#infoDC {
   padding-right: 17%;
   background-color: #0282f9;
 }
-main section#infoDC div img {
+main#home section#infoDC div img {
   height: 50px;
   width: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main section#infoDC div span {
+main#home section#infoDC div span {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+main#details {
+  position: relative;
+}
+main#details .divider {
+  height: 70px;
+  background-color: #0282f9;
+}
+main#details .thumbArticle {
+  position: absolute;
+  top: -240px;
+  left: 17%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+main#details section#consoleDetails {
+  width: 80%;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #f6f6f6;
+}
+main#details section#consoleDetails .cont-price {
+  background-color: green;
+  display: flex;
+  color: #ffffff;
+  height: 40px;
+}
+main#details section#consoleDetails .cont-price .info-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main#details section#consoleDetails .cont-price .check-Availability {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main#details section#consoleDetails .cont-price .check-Availability a.dropdown-toggle {
+  text-decoration: none;
+  color: #ffffff;
+}
+main#details section#infoDC {
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #0282f9;
+}
+main#details section#infoDC div img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main#details section#infoDC div span {
   padding-left: 20px;
   color: #ffffff;
 }
