@@ -13,13 +13,14 @@
         </div>
 
         <section id="consoleDetails">
+
             <h2>{{$article['series']}}</h2>
 
             <div class="cont-price">
-                
+
                 <div class="info-price">
-                    <span class="price">--------</span>
-                    <span class="Availability">-----------</span>
+                    <span class="price">{{$article['price']}}</span>
+                    <span class="Availability">AVAILABLE</span>
                 </div>
 
                 <div class="check-Availability">
@@ -34,6 +35,14 @@
                     </div>
                 </div>
             </div>
+
+            <p class="description">{{$article['description']}}</p>
+
+            <div class="cont-pubblicità">
+                <p>ADVERTISEMENT</p>
+                <img src="..\img\adv.jpg" alt="">
+            </div>
+
         </section>
 
 

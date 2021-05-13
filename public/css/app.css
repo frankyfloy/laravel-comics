@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cl-face {
   color: #3b5998;
 }
@@ -258,6 +259,7 @@ main#home section#infoDC div span {
 
 main#details {
   position: relative;
+  background-color: #f6f6f6;
 }
 main#details .divider {
   height: 70px;
@@ -266,41 +268,64 @@ main#details .divider {
 main#details .thumbArticle {
   position: absolute;
   top: -240px;
-  left: 17%;
+  left: 20%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 main#details section#consoleDetails {
-  width: 80%;
-  padding-left: 25%;
-  padding-right: 25%;
+  position: relative;
+  padding-left: 20%;
+  padding-right: 20%;
   background-color: #f6f6f6;
+  width: 80%;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 main#details section#consoleDetails .cont-price {
-  background-color: green;
+  width: 100%;
   display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: 20px;
   color: #ffffff;
-  height: 40px;
+  font-weight: bold;
+  background-color: #55ba59;
 }
 main#details section#consoleDetails .cont-price .info-price {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 main#details section#consoleDetails .cont-price .check-Availability {
-  margin-left: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-left: 1px solid black;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 main#details section#consoleDetails .cont-price .check-Availability a.dropdown-toggle {
   text-decoration: none;
   color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+main#details section#consoleDetails p.description {
+  font-size: 16px;
+}
+main#details div.cont-pubblicità {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  text-align: right;
+}
+main#details div.cont-pubblicità p {
+  margin: 0;
+  font-weight: bold;
 }
 main#details section#infoDC {
   height: 150px;
