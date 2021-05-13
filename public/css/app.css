@@ -174,8 +174,9 @@ main {
 main .container-main {
   padding-left: 17%;
   padding-right: 17%;
+  padding-bottom: 25px;
 }
-main .container-main .currSeries {
+main .container-main section#cardSection .currSeries {
   position: relative;
   top: -20px;
   left: 0;
@@ -191,12 +192,12 @@ main .container-main .currSeries {
   color: #ffffff;
   background-color: #0282f9;
 }
-main .container-main #consoleCard {
+main .container-main section#cardSection #consoleCard {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
 }
-main .container-main #consoleCard li.card {
+main .container-main section#cardSection #consoleCard li.card {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -204,7 +205,7 @@ main .container-main #consoleCard li.card {
   background-color: inherit;
   border: none;
 }
-main .container-main #consoleCard li.card img.card-img {
+main .container-main section#cardSection #consoleCard li.card img.card-img {
   width: 180px;
   height: 180px;
   -o-object-fit: cover;
@@ -212,14 +213,141 @@ main .container-main #consoleCard li.card img.card-img {
   -o-object-position: top;
      object-position: top;
 }
-main .container-main #consoleCard li.card .card-body {
+main .container-main section#cardSection #consoleCard li.card .card-body {
   width: 180px;
   padding-left: 0;
   color: #ffffff;
 }
-main .container-main #consoleCard li.card .card-body p {
+main .container-main section#cardSection #consoleCard li.card .card-body p {
   margin: 0;
   word-wrap: break-word;
+}
+main .container-main section#cardSection a.load-more {
+  width: 180px;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0282f9;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+main section#infoDC {
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  background-color: #0282f9;
+}
+main section#infoDC div img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section#infoDC div span {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+footer section#allLink {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+footer section#allLink div.cont-lists {
+  z-index: 0;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer section#allLink div.cont-lists .tb-dcComics-shop {
+  display: flex;
+  flex-direction: column;
+}
+footer section#allLink div.cont-lists .link-dcComics, footer section#allLink div.cont-lists .link-shop, footer section#allLink div.cont-lists .DC-list, footer section#allLink div.cont-lists .sites {
+  display: flex;
+  flex-direction: column;
+  padding-right: 35px;
+  font-size: 12px;
+  color: #ffffff;
+}
+footer section#allLink div.cont-lists .link-dcComics h5, footer section#allLink div.cont-lists .link-shop h5, footer section#allLink div.cont-lists .DC-list h5, footer section#allLink div.cont-lists .sites h5 {
+  margin-bottom: 20px;
+}
+footer section#allLink div.cont-lists .link-dcComics ul, footer section#allLink div.cont-lists .link-shop ul, footer section#allLink div.cont-lists .DC-list ul, footer section#allLink div.cont-lists .sites ul {
+  list-style: none;
+}
+footer section#allLink div.cont-lists .link-dcComics ul li, footer section#allLink div.cont-lists .link-shop ul li, footer section#allLink div.cont-lists .DC-list ul li, footer section#allLink div.cont-lists .sites ul li {
+  color: #959595;
+}
+footer section#allLink div.cont-lists .copyright {
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  color: #959595;
+}
+footer section#allLink .cont-logo-foot {
+  float: left;
+  display: flex;
+  background-image: url("../img/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer section#footer-social {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  background-color: #303030;
+}
+footer section#footer-social button.btn {
+  height: 50px;
+  border-radius: 0;
+  border: 2px solid #0282f9;
+  background-color: inherit;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 15px;
+}
+footer section#footer-social div.social {
+  display: flex;
+  align-items: center;
+}
+footer section#footer-social div.social h5 {
+  color: #0282f9;
+  font-weight: bold;
+}
+footer section#footer-social div.social div.link-social {
+  padding-left: 30px;
+}
+footer section#footer-social div.social div.link-social a.fab, footer section#footer-social div.social div.link-social a.fas {
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  background-color: #959595;
+  border-radius: 50%;
+  color: #303030;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .cont-jumbo {
