@@ -45,7 +45,70 @@
 
         </section>
 
+        <section id="infoDetails">
 
+
+            <table class="col-6">
+                <thead>
+                    <tr>
+                        <th>Talent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="headCell">Art by:</td>
+
+                        <td class="artists-name">
+                            @foreach ($article['artists'] as $artist)
+                                @if ($loop->last)
+                                    <a class="artist-name" href="#">{{$artist}}</a>
+                                @else
+                                    <a class="writer-name" href="#">{{$artist}}</a>
+                                    ,
+                                @endif
+                            @endforeach
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headCell">Written by:</td>
+                        <td class="artists-name">
+                            @foreach ($article['writers'] as $writer)
+                                <a class="writer-name" href="#">{{$writer}}</a>
+                            @endforeach
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="col-6">
+                <thead>
+                    <tr>
+                        <th>Specs</th>
+                        <th class="table-offset"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="headCell">Series:</td>
+                        <td class="series-type-details">
+                            <a href="#">{{strtoupper($article['series'])}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headCell">U.S. Price:</td>
+                        <td class="price-details">
+                            {{$article['price']}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headCell">ON Sale Date:</td>
+                        <td class="sale_date-details">
+                            {{$article['sale_date']}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
         <section id="infoDC">
 

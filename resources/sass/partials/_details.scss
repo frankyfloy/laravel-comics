@@ -62,20 +62,85 @@ main#details{
         p.description{
             font-size: 16px;
         }
-    }
 
+        div.cont-pubblicità{
+            position: absolute;
+            top: 20px;
+            right: 0;
+            text-align: right;
 
-    div.cont-pubblicità{
-        position: absolute;
-        top: 20px;
-        right: 0;
-        text-align: right;
-
-        p{
-            margin: 0;
-            font-weight: bold;
+            p{
+                margin: 0;
+                font-weight: bold;
+            }
         }
     }
+
+
+    section#infoDetails{
+        @include px(20%);
+        padding-bottom: 100px;
+        background-color: lightgrey;
+        width: 100%;
+        display: flex;
+
+        table{
+            display: block;
+            margin-top: 25px;
+            thead{
+                border-bottom: 1px solid #000;
+                th{
+                    padding-bottom: 20px;
+                    font-size: 22px;
+                }
+            }
+
+            tbody{
+                tr{
+                    border-bottom: 1px solid #000;
+                    padding-right: 100%;
+                    width: 100%;
+                    td.headCell{
+                        width: 30%;
+                        font-size: 12px;
+                        font-weight: bold;
+                        @include py(8px);
+                    }
+
+                    td.artists-name,td.writer-name{
+                        padding-right: 100%;
+                        @include py(8px);
+                        width: 70%;
+                        padding-right: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        table:first-child{
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        table:last-child{
+            padding-right: 0%;
+            padding-left: 20px;
+            // text-align: left;
+            thead{
+                width: 100%;
+                tr{
+                    th.table-offset{
+                        width: 70%;
+                        padding-left: 100%;
+                        padding-right: 100%;
+                        // @include px(100%);
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
     section#infoDC{

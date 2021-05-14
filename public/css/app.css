@@ -23,6 +23,10 @@
   color: #ff8d00;
 }
 
+.my-active {
+  color: #0282f9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -317,15 +321,70 @@ main#details section#consoleDetails .cont-price .check-Availability a.dropdown-t
 main#details section#consoleDetails p.description {
   font-size: 16px;
 }
-main#details div.cont-pubblicità {
+main#details section#consoleDetails div.cont-pubblicità {
   position: absolute;
   top: 20px;
   right: 0;
   text-align: right;
 }
-main#details div.cont-pubblicità p {
+main#details section#consoleDetails div.cont-pubblicità p {
   margin: 0;
   font-weight: bold;
+}
+main#details section#infoDetails {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 100px;
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+}
+main#details section#infoDetails table {
+  display: block;
+  margin-top: 25px;
+}
+main#details section#infoDetails table thead {
+  border-bottom: 1px solid #000;
+}
+main#details section#infoDetails table thead th {
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+main#details section#infoDetails table tbody tr {
+  border-bottom: 1px solid #000;
+  padding-right: 100%;
+  width: 100%;
+}
+main#details section#infoDetails table tbody tr td.headCell {
+  width: 30%;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+main#details section#infoDetails table tbody tr td.artists-name, main#details section#infoDetails table tbody tr td.writer-name {
+  padding-right: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 70%;
+  padding-right: 10px;
+  font-size: 12px;
+}
+main#details section#infoDetails table:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+main#details section#infoDetails table:last-child {
+  padding-right: 0%;
+  padding-left: 20px;
+}
+main#details section#infoDetails table:last-child thead {
+  width: 100%;
+}
+main#details section#infoDetails table:last-child thead tr th.table-offset {
+  width: 70%;
+  padding-left: 100%;
+  padding-right: 100%;
 }
 main#details section#infoDC {
   height: 150px;
@@ -450,4 +509,8 @@ footer section#footer-social div.social div.link-social a.fab, footer section#fo
 
 * {
   outline: none;
+}
+
+.my-active {
+  color: #0282f9;
 }

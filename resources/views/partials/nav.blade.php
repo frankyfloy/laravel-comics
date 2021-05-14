@@ -29,7 +29,10 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COMICS</a>
+                    <a class="nav-link
+                        {{Route::currentRouteName() == 'home' ||
+                            Route::currentRouteName() == 'details' ? 'my-active' : ''}}" href="{{route('home')}}">COMICS
+                    </a>
                 </li>
 
                 <li class="nav-item">
