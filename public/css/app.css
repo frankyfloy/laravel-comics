@@ -335,7 +335,7 @@ main#details section#infoDetails {
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 100px;
-  background-color: lightgrey;
+  background-color: #ececec;
   width: 100%;
   display: flex;
 }
@@ -344,14 +344,14 @@ main#details section#infoDetails table {
   margin-top: 25px;
 }
 main#details section#infoDetails table thead {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #959595;
 }
 main#details section#infoDetails table thead th {
   padding-bottom: 20px;
   font-size: 22px;
 }
 main#details section#infoDetails table tbody tr {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #959595;
   padding-right: 100%;
   width: 100%;
 }
@@ -385,6 +385,15 @@ main#details section#infoDetails table:last-child thead tr th.table-offset {
   width: 70%;
   padding-left: 100%;
   padding-right: 100%;
+}
+main#details section#infoDetails table:last-child tbody tr td {
+  width: 30%;
+}
+main#details section#infoDetails table:last-child tbody tr td:last-child {
+  width: 70%;
+  padding-left: 70px;
+  font-size: 12px;
+  font-weight: bold;
 }
 main#details section#infoDC {
   height: 150px;
