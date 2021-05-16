@@ -12,9 +12,6 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
-        <!-- Bootstrap core CSS -->
-        <link href = {{ asset("bootstrap/css/bootstrap.css") }} rel="stylesheet" />
-
         <link rel="stylesheet" href="/css/app.css">
     </head>
 

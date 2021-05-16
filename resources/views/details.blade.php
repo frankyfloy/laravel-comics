@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('details')
+
     <main id="details">
 
         <div class="divider">
@@ -47,96 +48,76 @@
 
         <section id="infoDetails">
 
-
-            <table class="col-6">
-                <thead>
-                    <tr>
-                        <th>Talent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="headCell">Art by:</td>
-
-                        <td class="artists-name">
-                            @foreach ($article['artists'] as $artist)
-                                @if ($loop->last)
-                                    <a class="artist-name" href="#">{{$artist}}</a>
-                                @else
-                                    <a class="writer-name" href="#">{{$artist}}</a>
-                                    ,
-                                @endif
-                            @endforeach
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="headCell">Written by:</td>
-                        <td class="artists-name">
-                            @foreach ($article['writers'] as $writer)
+            <div class="col-6">
+                <h4>Talent</h4>
+                <div class="br-bottom">
+                    <span class="headCell">Art by:</span>
+                    <span class="contentCell">
+                        @foreach ($article['artists'] as $artist)
+                            @if ($loop->last)
+                                <a class="artist-name" href="#">{{$artist}}</a>
+                            @else
+                                <a class="writer-name" href="#">{{$artist}}</a>
+                                ,
+                            @endif
+                        @endforeach
+                    </span>
+                </div>
+                <div class="br-bottom">
+                    <span class="headCell">Written by:</span>
+                    <span class="contentCell">
+                        @foreach ($article['writers'] as $writer)
+                            @if ($loop->last)
                                 <a class="writer-name" href="#">{{$writer}}</a>
-                            @endforeach
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            @else
+                                <a class="writer-name" href="#">{{$writer}}</a>
+                                ,
+                            @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
 
-            <table class="col-6">
-                <thead>
-                    <tr>
-                        <th>Specs</th>
-                        <th class="table-offset"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="headCell">Series:</td>
-                        <td class="series-type-details">
-                            <a href="#">{{strtoupper($article['series'])}}</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="headCell">U.S. Price:</td>
-                        <td class="price-details">
-                            {{$article['price']}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="headCell">ON Sale Date:</td>
-                        <td class="sale_date-details">
-                            {{$article['sale_date']}}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="col-6">
+                <h4>Specs</h4>
+                <div class="br-bottom">
+                    <span class="headCell">Series:</span>
+                    <a class="contentCell" href="#">{{strtoupper($article['series'])}}</a>
+                </div>
+                <div class="br-bottom">
+                    <span class="headCell">U.S. Price:</span>
+                    <span class="contentCell">{{$article['price']}}</span>
+                </div>
+                <div class="br-bottom">
+                    <span class="headCell">ON Sale Date:</span>
+                    <span class="contentCell">{{$article['sale_date']}}</span>
+                </div>
         </section>
 
         <section id="infoDC">
 
             <div class="digi-comics">
-                <img src="img\buy-comics-digital-comics.png" alt="img-digital-comics">
-                <span>DIGITAL COMICS</span>
-            </div>
-            <div class="dc-merchandise">
-                <img src="img\buy-comics-merchandise.png" alt="img-merchandise">
-                <span>DIGITAL COMICS</span>
+                <img href="#" src={{asset('img\buy-comics-digital-comics.png')}} alt="img-digital-comics">
+                <span><a href="#">DIGITAL COMICS</a></span>
             </div>
 
             <div class="sub">
-                <img src="img\buy-comics-subscriptions.png" alt="img-subscriptions">
-                <span>DIGITAL COMICS</span>
+                <img href="#" src={{asset('img\buy-comics-subscriptions.png')}} alt="img-subscriptions">
+                <span><a href="#">SHOP DC</a></span>
             </div>
 
             <div class="shop-loc">
-                <img src="img\buy-comics-shop-locator.png" alt="img-shop-locator">
-                <span>DIGITAL COMICS</span>
+                <img href="#" src={{asset('img\buy-comics-shop-locator.png')}} alt="img-shop-locator">
+                <span><a href="#">COMIC SHOP LOCATOR</a></span>
             </div>
 
-            <div class="dc-pw-visa">
-                <img src="img\buy-dc-power-visa.svg" alt="img-DC-Power-visa">
-                <span>DIGITAL COMICS</span>
+            <div class="dc-merchandise">
+                <img href="#" src={{asset('img\buy-comics-merchandise.png')}} alt="img-merchandise">
+                <span><a href="#">SUBSCRIPTIONS</a></span>
             </div>
+
         </section>
 
-
     </main>
+
 @endsection

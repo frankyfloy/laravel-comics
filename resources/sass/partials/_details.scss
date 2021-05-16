@@ -12,6 +12,7 @@ main#details{
         top:-240px;
         left: 20%;
         width: max-content;
+        border: 1px solid $white;
     }
 
     section#consoleDetails{
@@ -48,8 +49,6 @@ main#details{
                 border-left: 1px solid black;
                 @include px(2%);
 
-
-
                 a.dropdown-toggle{
                     text-decoration: none;
                     color: $white;
@@ -79,103 +78,93 @@ main#details{
 
     section#infoDetails{
         @include px(20%);
+        padding-top: 30px;
         padding-bottom: 100px;
         background-color: $lightGreyFoot;
         width: 100%;
         display: flex;
 
-        table{
-            display: block;
-            margin-top: 25px;
-            thead{
-                border-bottom: 1px solid $greyFooter;
-                th{
-                    // width: 50%;
-                    padding-bottom: 20px;
-                    font-size: 22px;
-                }
-            }
 
-
-            tbody{
-                tr{
-                    border-bottom: 1px solid $greyFooter;
-                    padding-right: 100%;
-                    width: 100%;
-                    td.headCell{
-                        width: 30%;
-                        font-size: 12px;
-                        font-weight: bold;
-                        @include py(8px);
-                    }
-
-                    td.artists-name,td.writer-name{
-                        padding-right: 100%;
-                        @include py(8px);
-                        width: 70%;
-                        padding-right: 10px;
-                        font-size: 12px;
-                    }
-                }
-            }
+        h4{
+            margin: 0;
+            padding-bottom: 20px;
+            font-size: 22px;
+            border-bottom: 1px solid $greyFooter;
         }
 
-        table:first-child{
-            padding-left: 0;
-            padding-right: 20px;
+        span.headCell{
+            width: 20%;
+            font-size: 12px;
+            font-weight: bold;
+            @include py(8px);
         }
-        table:last-child{
-            padding-right: 0%;
-            padding-left: 20px;
-            // text-align: left;
-            thead{
-                width: 100%;
-                tr{
-                    th.table-offset{
-                        width: 70%;
-                    }
-                }
-            }
-            tbody{
-                tr{
-                    td{
-                        width: 30%;
-                    }
-                    td:last-child{
-                        width: 70%;
-                        padding-left: 70px;
-                        padding-right:
-                        font-size: 12px;
-                        font-weight: bold;
-                    }
-                }
-            }
+
+        span.contentCell{
+            padding-right: 100%;
+            @include py(8px);
+            width: 80%;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
         }
+
+        .br-bottom{
+            display: flex;
+            @include py(5px);
+            border-bottom: 1px solid $greyFooter;
+        }
+
     }
 
     section#infoDC{
-        height: 150px;
+        height: 70px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        @include px(25%);
-        background-color: $blueComics;
+        @include px(20%);
+        border-top: 1px solid  $greyFooter;
+        background-color: $lightGreyFoot;
+
 
         div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            @include px(10px);
+            border-left: 1px solid  $greyFooter;
+
             img{
-                height: 50px;
-                width: 50px;
+                order: 1;
+                height: 40px;
+                width: 40px;
                 object-fit: contain;
+                align-self: center;
+                filter: brightness(0.5);
+
+                &:hover{
+                    filter: invert(1);
+                }
             }
             span{
-                padding-left: 20px;
-                color: $white;
+                padding-top: 10px;
+                padding-left: 10px;
+                color:  $greyFooter;
+                font-weight: bold;
+                font-size: 12px;
+
+                a{
+                    color: inherit;
+
+                    &:hover{
+                        color: $blueComics;
+                    }
+                }
+            }
+
+            &:last-child{
+                border-right: 1px solid  $greyFooter;
             }
         }
     }
-
-
-
-
 }
